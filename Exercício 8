@@ -1,0 +1,13 @@
+int totalVeiculos, totalRodas, carros, motos;
+
+Console.WriteLine("Insira o total de veículos: ");
+totalVeiculos = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Insira o total de rodas: ");
+totalRodas = int.Parse(Console.ReadLine());
+
+carros = (totalRodas - (totalVeiculos * 2)) / 2;
+motos = totalVeiculos - carros;
+
+Console.WriteLine($"No estacionamento há um total de {carros} carros e {motos} motos");
+Console.ReadLine();
