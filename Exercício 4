@@ -1,0 +1,17 @@
+double montante, capital, juros;
+int mes;
+
+Console.WriteLine("Insira o valor a ser aplicado: ");
+capital = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine("Insira o Prazo de aplicação: ");
+mes = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Insira a taxa de juros em %: ");
+juros = Convert.ToDouble(Console.ReadLine());
+
+juros = juros / 100;
+
+montante = capital * Math.Pow(1 + juros, mes);
+Console.WriteLine("O montante a ser recebido é: R$" + montante.ToString("F2"));
+Console.ReadLine();
