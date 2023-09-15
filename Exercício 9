@@ -1,0 +1,11 @@
+int segundos, horas, minutos, num;
+
+Console.WriteLine("Insira um número: ");
+num = int.Parse(Console.ReadLine());
+
+segundos = num % 60;
+horas = num / 3600;
+minutos = (num % 3600) / 60;
+
+Console.WriteLine($" O número corresponde a {horas} Horas {minutos} Minutos e {segundos} Segundos");
+Console.ReadLine();
