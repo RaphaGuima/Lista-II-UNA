@@ -1,0 +1,9 @@
+Double preçoProduto, preçoPrecentual;
+
+Console.WriteLine("Insira o valor do produto: ");
+
+preçoProduto = Convert.ToDouble(Console.ReadLine());
+preçoPrecentual = (preçoProduto / 100) * 10 + preçoProduto;
+
+Console.WriteLine("O novo valor do produto com o acrescimo de '10%' é: R$" + preçoPrecentual.ToString("F2"));
+Console.ReadLine();
